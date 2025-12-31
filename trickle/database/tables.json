@@ -1,0 +1,71 @@
+[
+  {
+    "name": "project",
+    "fields": [
+      {
+        "name": "title",
+        "type": "text",
+        "description": "The main title of the project",
+        "options": null
+      },
+      {
+        "name": "category",
+        "type": "text",
+        "description": "Project category (e.g., VAPT, Reconnaissance)",
+        "options": null
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "description": "Brief description of the project",
+        "options": null
+      },
+      {
+        "name": "tags",
+        "type": "array",
+        "description": "List of technologies or tools used",
+        "options": [
+          "OWASP ZAP",
+          "Burp Suite",
+          "Wireshark",
+          "Shodan",
+          "Google Dorks",
+          "Netcraft",
+          "JavaScript",
+          "Tailwind CSS",
+          "Chart.js"
+        ]
+      },
+      {
+        "name": "linkUrl",
+        "type": "text",
+        "description": "URL to the project or report",
+        "options": null
+      },
+      {
+        "name": "linkText",
+        "type": "text",
+        "description": "Text for the link button",
+        "options": null
+      },
+      {
+        "name": "icon",
+        "type": "text",
+        "description": "Lucide icon class name",
+        "options": null
+      },
+      {
+        "name": "gradient",
+        "type": "text",
+        "description": "Tailwind gradient classes for the card accent",
+        "options": null
+      },
+      {
+        "name": "featured",
+        "type": "bool",
+        "description": "Whether to show this project prominently",
+        "options": null
+      }
+    ]
+  }
+]

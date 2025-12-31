@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumant | Cybersecurity Analyst</title>
+    <meta name="description" content="Portfolio of a Cybersecurity Analyst specializing in VAPT, Security Automation, and DFIR.">
+    <meta name="keywords" content="Cybersecurity, VAPT, DFIR, Portfolio, Python, Automation">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            /* Primary: Fresh Cyan/Teal */
+            --primary: #06b6d4; 
+            --primary-dark: #0891b2;
+            --primary-light: #ecfeff;
+
+            /* Secondary: Deep Navy/Slate (Replacing Black) */
+            --text-main: #1e293b; /* Slate 800 */
+            --text-muted: #475569; /* Slate 600 */
+            --bg-body: #f8fafc; /* Slate 50 */
+            --bg-surface: #ffffff;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #0f172a; /* Slate 900 - Darkest blue-grey, not black */
+        }
+    }
+
+    @layer components {
+        .container-custom {
+            @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+        }
+        .section-padding {
+            @apply py-16 md:py-24;
+        }
+        .card {
+            @apply bg-[var(--bg-surface)] rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300;
+        }
+        .btn-primary {
+            @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-[var(--primary)] hover:bg-[var(--primary-dark)] transition-colors duration-200;
+        }
+        .btn-outline {
+            @apply inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 transition-colors duration-200;
+        }
+        .badge {
+            @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Navigation.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Skills.js"></script>
+    <script type="text/babel" src="components/Experience.js"></script>
+    <script type="text/babel" src="components/Projects.js"></script>
+    <script type="text/babel" src="components/Certifications.js"></script>
+    <script type="text/babel" src="components/Articles.js"></script>
+    <script type="text/babel" src="components/Education.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
